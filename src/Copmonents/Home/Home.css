@@ -1,0 +1,28 @@
+.home{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    gap: 3;
+}
+.text{
+    margin-top: 5px;
+    padding-left: 5px;
+}
+.text-2xl{
+    margin-top: 5px;
+}
+.text-5xl{
+    margin-top: 5px;
+    color: brown;
+}
+.btn{
+    margin-top: 8px;
+    background-color: brown;
+    padding: 10px;
+    color: beige;
+    border-radius: 8px;
+    font-size: medium;
+}
+.btn:hover{
+    background-color: red;
+    transition-duration: 2s;
+}
