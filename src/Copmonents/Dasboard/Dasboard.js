@@ -81,7 +81,7 @@ const Dasboard = () => {
                 <Bar dataKey="revenue" barSize={20} fill="#413ea0" />
                 <Line type="monotone" dataKey="sell" stroke="#ff7300" />
             </ComposedChart>
-        </div>
+        </div >
 
     );
 };

@@ -12,8 +12,8 @@ import Revews from './Copmonents/Revews/Revews';
 function App() {
   return (
     <div className="App">
-      <Navbar></Navbar>
       <Routes>
+        <Navbar></Navbar>
         <Route path="/home" element={<Home></Home>}></Route>
         <Route path="/revews" element={<Revews></Revews>}></Route>
         <Route path="/dasboard" element={<Dasboard></Dasboard>}></Route>
@@ -21,6 +21,7 @@ function App() {
         <Route path="/about" element={<About></About>}></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
+
     </div>
   );
 }

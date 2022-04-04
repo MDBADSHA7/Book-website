@@ -1,0 +1,16 @@
+.review {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-left: 125px;
+    margin-top: 20px;
+    position: absolute;
+}
+
+@media screen and (max-width:500px) {
+    .review {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+}

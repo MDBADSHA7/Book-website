@@ -1,29 +1,49 @@
-.home{
+.home {
     display: grid;
-    grid-template-columns:repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 3;
+    justify-content: center;
 }
-.text{
-    margin-top: 5px;
-    padding-left: 5px;
-    padding-left: 20px;
+
+@media screen and (max-width:500px) {
+    .home {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
-.text-2xl{
-    margin-top: 5px;
+
+.text {
+    margin-top: 100px;
+    padding-left: 100px;
 }
-.text-5xl{
-    margin-top: 5px;
+
+.text-2xl {
+    margin-top: 15px;
+}
+
+.text-5xl {
+    margin-top: 15px;
     color: brown;
 }
-.btn{
-    margin-top: 8px;
+
+.btn {
+    margin-top: 30px;
     background-color: brown;
     padding: 10px;
     color: beige;
     border-radius: 8px;
     font-size: medium;
 }
-.btn:hover{
+
+.btn:hover {
     background-color: red;
     transition-duration: 2s;
+}
+
+.Image img {
+    width: 500px;
+    height: 500px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 30px;
+    padding-left: 50px;
 }
