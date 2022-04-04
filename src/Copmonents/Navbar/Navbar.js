@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Link from '../Link/Link';
 import { MenuIcon, XIcon } from '@heroicons/react/solid'
 
+
 const Navbar = () => {
     const [open, setOpen] = useState(false);
     const routes = [
@@ -9,11 +10,12 @@ const Navbar = () => {
         { id: 2, name: 'Revews', link: '/revews' },
         { id: 3, name: 'Dasboard', link: '/dasboard' },
         { id: 4, name: 'Blogs', link: '/blogs' },
-        { id: 5, name: 'About', link: '/home' },
+        { id: 5, name: 'About', link: '/about' },
 
     ]
     return (
         <nav className='bg-indigo-400'>
+
             <div onClick={() => setOpen(!open)} className='w-5 h-5 md:hidden'>
                 {open ? <XIcon></XIcon> : <MenuIcon></MenuIcon>}
             </div>
