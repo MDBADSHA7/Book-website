@@ -42,6 +42,7 @@ const Dasboard = () => {
     ]
     return (
         <div className='grid md:grid-cols-2 sm:grid-cols-1 gap-5'>
+
             <BarChart width={500} height={400} data={data}
                 margin={{ top: 30, right: 30, left: 100, bottom: 5 }}>
                 <CartesianGrid strokeDasharray="3 3" />
