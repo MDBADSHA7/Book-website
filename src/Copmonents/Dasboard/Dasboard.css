@@ -1,0 +1,37 @@
+.dasboard {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.barchart {
+    font-size: xx-large;
+    color: blue;
+    text-align: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.linechart {
+    font-size: xx-large;
+    color: red;
+    text-align: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.piechart {
+    font-size: xx-large;
+    color: deeppink;
+    text-align: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.composedchart {
+    font-size: xx-large;
+    color: green;
+    text-align: center;
+    justify-content: center;
+    margin-top: 30px;
+}
