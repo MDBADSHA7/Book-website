@@ -42,16 +42,15 @@ const Dasboard = () => {
     ]
     return (
         <div className='grid md:grid-cols-2 sm:grid-cols-1 gap-5'>
-
             <BarChart width={500} height={400} data={data}
-                margin={{ top: 30, right: 30, left: 100, bottom: 5 }}>
+                margin={{ top: 30, right: 30, left: 100, bottom: 5 }} >
                 <CartesianGrid strokeDasharray="3 3" />
                 <XAxis dataKey="month"></XAxis>
                 <YAxis dataKey="investment"></YAxis>
                 <Tooltip></Tooltip>
                 <Legend></Legend>
-                <Bar dataKey="sell" fill="#8884d8" />
-                <Bar dataKey="revenue" fill="#82ca9d" />
+                <Bar dataKey="sell" fill="red" />
+                <Bar dataKey="revenue" fill="blue" />
             </BarChart>
             <LineChart width={500} height={400} data={data}
                 margin={{ top: 30, right: 30, left: 20, bottom: 5 }}>
@@ -60,15 +59,15 @@ const Dasboard = () => {
                 <YAxis dataKey="investment" />
                 <Tooltip></Tooltip>
                 <Legend></Legend>
-                <Line type="monotone" dataKey="sell" stroke="#8884d8" />
-                <Line type="monotone" dataKey="revenue" stroke="#82ca9d" />
+                <Line type="monotone" dataKey="sell" stroke="brown" />
+                <Line type="monotone" dataKey="revenue" stroke="red" />
             </LineChart>
             <PieChart width={500} height={400}
                 margin={{ top: 30, right: 30, left: 100, bottom: 5 }}>
                 <Pie data={data} dataKey="investment" cx="50%" cy="50%" outerRadius={50} fill="#8884d8" />
-                <Pie data={data} dataKey="sell" cx="50%" cy="50%" outerRadius={50} fill="#8884d8" />
+                <Pie data={data} dataKey="sell" cx="50%" cy="50%" outerRadius={50} fill="orange" />
                 <Tooltip></Tooltip>
-                <Pie data={data} dataKey="revenue" cx="50%" cy="50%" innerRadius={60} outerRadius={80} fill="#82ca9d" label />
+                <Pie data={data} dataKey="revenue" cx="50%" cy="50%" innerRadius={60} outerRadius={80} fill="green" label />
             </PieChart>
             <ComposedChart width={500} height={400} data={data}
                 margin={{ top: 30, right: 30, left: 50, bottom: 5 }}>
@@ -76,9 +75,9 @@ const Dasboard = () => {
                 <YAxis dataKey="investment" />
                 <Tooltip></Tooltip>
                 <Legend></Legend>
-                <CartesianGrid stroke="#f5f5f5" />
-                <Area type="monotone" dataKey="sell" fill="#8884d8" stroke="#8884d8" />
-                <Bar dataKey="revenue" barSize={20} fill="#413ea0" />
+                <CartesianGrid stroke="blue" />
+                <Area type="monotone" dataKey="sell" fill="brown" stroke="#8884d8" />
+                <Bar dataKey="revenue" barSize={20} fill="indigo" />
                 <Line type="monotone" dataKey="sell" stroke="#ff7300" />
             </ComposedChart>
         </div >
