@@ -1,5 +1,4 @@
 import React from 'react';
-
 import './Home.css'
 
 const Home = () => {
@@ -16,7 +15,6 @@ const Home = () => {
             <div className='Image'>
                 <img src="https://sg-test-11.slatic.net/other/roc/88f9f5a92922ac0871ed9bf832a0a620.jpg" alt="" />
             </div>
-
         </div>
 
     );

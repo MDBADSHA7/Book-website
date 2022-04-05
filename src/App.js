@@ -6,14 +6,15 @@ import Blogs from './Copmonents/Blogs/Blogs';
 import Dasboard from './Copmonents/Dasboard/Dasboard';
 import Home from './Copmonents/Home/Home';
 import Navbar from './Copmonents/Navbar/Navbar';
+
 import NotFound from './Copmonents/NotFound/NotFound';
 import Revews from './Copmonents/Revews/Revews';
 
 function App() {
   return (
     <div className="App">
+      <Navbar></Navbar>
       <Routes>
-        <Navbar></Navbar>
         <Route path="/home" element={<Home></Home>}></Route>
         <Route path="/revews" element={<Revews></Revews>}></Route>
         <Route path="/dasboard" element={<Dasboard></Dasboard>}></Route>
